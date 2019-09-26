@@ -1,0 +1,369 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+table {
+  font-family: courier;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #5797B6;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.first-section{
+  display: flex;
+}
+
+.row-2{
+  margin-left: 5%;
+  margin-bottom: 16px;
+}
+
+.inner-header-container div{
+  margin-top: 16px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/* MOBILE MODE
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.contact-container p{
+  padding: 30px 30px;
+  color: white;
+  opacity: 0.8;
+}
+
+.submit-container{
+  margin-bottom: 5%;
+}
+
+.submit-container input:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+.contact-container{
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-container h1{
+  font-family: verdana;
+}
+
+.contact-container input{
+  font-family: courier;
+  background: rgba(0,0,0,0.3);
+  padding: 10px 16px;
+  color: white;
+}
+
+.contact-container textarea{
+  font-family: courier;
+  background: rgba(0,0,0,0.3);
+  padding: 10px 16px;
+  color: white;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.buttons-container{
+  display: flex;
+}
+
+.buttons-container input{
+  font-family: courier;
+  background: rgba(0,0,0,0.3);
+  padding: 10px 16px;
+}
+
+.buttons-container input:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+.submission-form-resume{
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.submission-form-linkedin{
+  padding-top: 16px;
+}
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+/* MOBILE MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.buttons-container-mobile{
+  display: flex;
+}
+
+.buttons-container-mobile input{
+  font-family: courier;
+  background: rgba(0,0,0,0.3);
+  padding: 4px 8px;
+  font-size: 10px;
+}
+
+.buttons-container-mobile input:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+.submission-form-resume-mobile{
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.submission-form-linkedin-mobile{
+  padding-top: 8px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* MOBILE MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+/* Style the links inside the navigation bar */
+.topnav-mobile a{
+  float: left;
+  color: #fff;
+  font-family: courier;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 10px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav-mobile a:hover {
+  color: white;
+  opacity: 1;
+}
+/* Remove css style from a.active element of topnav whenever other a elements of topnav are hovered over */
+.topnav-mobile:hover > a.active { opacity: 0.5;}
+
+/* Add a color to the active/current link */
+.topnav-mobile a.active {
+  opacity: 1;
+  color: white;
+}
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.topnav a {
+  float: left;
+  color: #fff;
+  font-family: courier;
+  text-align: center;
+  padding: 25px 25px;
+  font-size: 17px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+  opacity: 1;
+}
+/* Remove css style from a.active element of topnav whenever other a elements of topnav are hovered over */
+.topnav:hover > a.active { opacity: 0.5;}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  opacity: 1;
+  color: white;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.pinf-brief{
+  margin-left: 10%;
+  margin-top: 300px;
+}
+
+.pinf-brief-container{
+  display: inline;
+  float: left;
+  font-family: courier;
+  text-shadow: 1px 1px black;
+}
+
+.pinf-brief-container h1{
+  font-size: 52px;
+}
+
+.pinf-brief-container p{
+  font-size: 18px;
+}
+
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+/* MOBILE MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.pinf-brief-mobile{
+  margin-top: 100px;
+  margin-left: 10%;
+}
+
+.pinf-brief-container-mobile{
+  display: inline;
+  float: left;
+  font-family: courier;
+  text-shadow: 1px 1px black;
+}
+
+.pinf-brief-container-mobile h1{
+  font-size: 20px;
+}
+
+.pinf-brief-container-mobile p{
+  font-size: 10px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+#content {
+  background-color: #130d0a;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero-mobile {
+  display: none;
+  overflow: hidden;
+  background: url("https://cdn.omgpx.com/images/2018/11/11/login.jpg") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #ede0d5;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+img {
+  border: solid 2px #5797B6;
+  border-radius: 50%;
+  height: 300px;
+}
+
+#hero, .layer {
+  min-height: 800px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+.layer-bg {
+  background-image: url("https://cdn.omgpx.com/images/2018/11/11/login.jpg");
+  height: 920px;
+}
+
+.layer-1 {
+  background-image: url("../img/ilu_man.png");
+  background-position: right bottom;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* This is where the hero image intersects with the brief info text - remove the image and shrink the text size so that the nav items don't line up under each other*/
+@media only screen and (max-width: 1090px) {
+  .layer-1{
+    opacity: 0;
+  }
+
+  .topnav a {
+    padding: 16px 16px;
+  }
+
+  .pinf-brief-container h1{
+    font-size: 44px;
+  }
+
+  .pinf-brief-container p{
+    font-size: 16px;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+
+  .contact-container{
+    width: 80%;
+  }
+
+  img{
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .first-section{
+    display: inline;
+  }
+
+  .inner-header-container{
+    display: flex;
+  }
+
+  .inner-header-container div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+  }
+
+  td, th {
+    text-align: left;
+    padding: 4px;
+    font-size: 12px;
+  }
+
+}
