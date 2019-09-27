@@ -57,11 +57,27 @@ function translateToEnd(){
 }
 
 function goPrevious(){
-  $("html, body").animate({scrollTop : 800}, "fast");
+  // detect if screen is mobile or pc and scroll accordingly
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 320}, "fast");
+  }
+  else {
+    $("html, body").animate({scrollTop : 800}, "fast");
+  }
+  // perform action
   console.log("PREVIOUS")
 }
 
 function goNext(){
-  $("html, body").animate({scrollTop : 800}, "fast");
+  // detect if screen is mobile or pc and scroll accordingly
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 320}, "fast");
+  }
+  else {
+    $("html, body").animate({scrollTop : 800}, "fast");
+  }
+  // perform action
   console.log("NEXT")
 }
