@@ -55,3 +55,13 @@ function translateToContentMobile(input){
 function translateToEnd(){
   $("html, body").animate({scrollTop : document.body.scrollHeight}, "fast");
 }
+
+function goPrevious(){
+  $("html, body").animate({scrollTop : 800}, "fast");
+  console.log("PREVIOUS")
+}
+
+function goNext(){
+  $("html, body").animate({scrollTop : 800}, "fast");
+  console.log("NEXT")
+}

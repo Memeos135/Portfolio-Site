@@ -9,6 +9,37 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /* BIG SCREEN MODE */
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.next-previous-container a {
+  text-decoration: none;
+  padding: 30px 50px;
+  margin: 40px;
+  font-size: 35px;
+}
+
+.next-previous-container a:hover {
+  background-color: #5797B6;
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.round {
+  opacity: 0.2;
+  border-radius: 20%;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 table {
   font-family: courier;
   border-collapse: collapse;
@@ -336,9 +367,15 @@ img {
   .pinf-brief-container p{
     font-size: 16px;
   }
+
+  .next-previous-container a {
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 40px;
+    font-size: 35px;
+  }
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
-
 @media only screen and (max-width: 768px) {
   #hero {
     display: none;
@@ -378,4 +415,10 @@ img {
     font-size: 12px;
   }
 
+  .next-previous-container a {
+    text-decoration: none;
+    padding: 20px 30px;
+    margin: 40px;
+    font-size: 20px;
+  }
 }
