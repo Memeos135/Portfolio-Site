@@ -26,7 +26,79 @@ body {
   background: #555; 
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.miniBarProgress {
+  background-color: #19A4D0;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 6px;
+}
 
+.miniBar {
+  border-radius: 6px;
+  height: 0.5rem;
+  background-color: #303030;
+  position: relative;
+  width: -webkit-calc(100% - 2rem);
+  width: -moz-calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  margin-right: 0.5rem;
+}
+
+.pro-skills-list{
+  padding: 26px;
+}
+
+.pers-skills-list{
+  padding: 26px;
+}
+
+.lang-skills-list{
+  padding: 26px;
+}
+
+.skills-sub-container{
+  display: flex;
+  font-family: courier;
+}
+
+.skills-sub-container h1{
+  font-size: 28px;
+}
+
+.skills-sub-container p{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+
+.pro-skills{
+  width: 100%;
+  background-color: #202020;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.pers-skills{
+  width: 100%;
+  background-color: #202020;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.lang-skills{
+  width: 100%;
+  background-color: #202020;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /* Title for Timeline (all timelines) */
 /* BIG SCREEN MODE */
@@ -671,6 +743,28 @@ img {
    .timeline ol li:not(:last-child)::after {
     content: none;
   }
+
+  .skills-sub-container{
+    display: inline;
+  }
+
+  .skills-container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pro-skills{
+    width: auto;
+  }
+
+  .pers-skills{
+    width: auto;
+  }
+
+  .lang-skills{
+    width: auto;
+  }
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
@@ -763,5 +857,21 @@ img {
 
   .edu-container{
     display: inline;
+  }
+
+  .skills-sub-container{
+    display: inline;
+  }
+
+  .pro-skills{
+    width: auto;
+  }
+
+  .pers-skills{
+    width: auto;
+  }
+
+  .lang-skills{
+    width: auto;
   }
 }
