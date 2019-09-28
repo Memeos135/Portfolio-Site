@@ -25,40 +25,114 @@ var list = ["<section class='first-section'><div class='row-1'><div class=\"inne
 "<div class=\"timeline-header\"><h1 align=\"center\"> Timeline </h1></div><section class=\"timeline\"><ol><li><div><time>March 2018 - Programming Jam 4.0 (Virtual) </time> Topic: Virtual programming competition across all universities in Saudi Arabia. The competition required a team of three and a mentor. The competition lasted for a duration of 16 hours and was problem-solving-based (Hackerrank).</div></li><li><div><time>May 2018 - Globalink Research Internship</time> Topic: LoRaWAN Literature Review and Network Deployment using Dragino LoRa. The internship was held in Universite de Sherbrooke, Sherbrooke, Canada.</div></li><li><div><time>October 2018 - Third National Programming Competition</time> Topic: Programming problem-solving competition amongst universities kingdom-wide. Training duration was two weeks prior to competition date.</div></li><li><div><time>January 2019 - Computer Lab Teaching Assistant</time> Java programming-101 lab for Computer Science students at University of Jeddah. Concepts taught include: control statements, functions, variables, arrays, types, system input, arithmetics, and string manipulation.</div></li><li><div><time>June 2019 - Android Developer @ GAMA</time>Member of the mobile development team in the development department. Responsibilities include: testing, feature enhancements, feature addition, optimization, bug fixing, improving current designs or coming up with entirely new designs, etc.</div></li><li></li></ol></section>",
   "<div class=\"edu-container\"><div class=\"edu-section\" style=\"display: inline;\"><h1 align=\"center\"> Education </h1><section class=\"timeline-edu\"><ol><li><div><time>May 2019 - BSc in Computer Science </time>Description: UoJ CS program is a five-year course beginning with a foundation year that covers basic sciences. The program focuses on equipping students with necessary practical skills to ready them for future jobs. <br><br>Primary focus areas include: software engineering, algorithm design and analysis, and data structures.</div></li><li></li></ol></section></div><div class=\"edu-section\" style=\"display: inline;\"><h1 align=\"center\"> Courses </h1><section class=\"timeline-course\"><ol><li><div><time>September 2017 - Udacity Intro. to Programming </time> Description: Udacity nanodegree programs are project-based courses, particularly focusing on required technical concepts and best practices in the professional job market. <br><br> This program focused on learning HTML, CSS, JavaScript (jQuery) and Python to enable students to do front-end development.</div></li><li><div><time>March 2018 - Udacity Android Basics</time> Description: Udacity nanodegree programs are project-based courses, particularly focusing on required technical concepts and best practices in the professional job market. <br><br> This program focuses on learning Java for Android Development and getting students acquantained with Android Studio. <br><br>Learned skills include: ArrayAdapters, Fragments, Intents, RecyclerView/ListView, Cusom Layouts, and SQLite.</div></li><li><div><time>May 2019 - Udacity Android Developer</time> Description: Udacity nanodegree programs are project-based courses, particularly focusing on required technical concepts and best practices in the professional job market. <br><br> This program particularly focused on network operations, Android lifecycle, services, more fragments, external-library integration, material design, and widgets. <br><br>Learned skills include: Google Room, Firebase Storage/Authentication/Real-time Database, Gson, IntentServices, Broadcast Receivers, Instance States, Android lifecycle, and AsyncTasks.</div></li><li></li></ol></section></div></div>",
    './skills',
-    './prj_demo',
-     './certs']
+    './prj_demo']
 
 function translateToContent(input){
-  $("html, body").animate({scrollTop : 800}, "fast");
+  // if  this is first click, set firstClick flag to false
+  if(firstClick){
+    firstClick = false;
+  }
+
+  // scroll down to position
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 320}, "fast");
+    scrolledValue = 320;
+  }else{
+    $("html, body").animate({scrollTop : 800}, "fast");
+    scrolledValue = 800;
+  }
+
+  // inflate HTML
   if(input == "EXP"){
-    console.log("LOAD EXP")
+    $(".container").empty()
+    $(".container").append(list[1]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 1;
   }else if(input == "EDU"){
-    console.log("LOAD EDU")
+    $(".container").empty()
+    $(".container").append(list[2]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 2;
   }else if(input == "SKILLS"){
-    console.log("LOAD SKILLS")
+    $(".container").empty()
+    $(".container").append(list[3]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 3;
   }else if(input == "PRJ_DEMO"){
-    console.log("LOAD PRJ DEMO")
-  }else if(input == "CERTS"){
-    console.log("LOAD CERTS")
+    $(".container").empty()
+    $(".container").append(list[4]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 4;
   }
 }
 
 function translateToHome(){
-  $("html, body").animate({scrollTop : 0}, "fast");
+  if(firstClick){
+    var mq = window.matchMedia( "(max-width: 768px)" );
+    if (mq.matches) {
+      $("html, body").animate({scrollTop : 320}, "fast");
+      firstClick = false
+      scrolledValue = 320;
+      return;
+    }else{
+      $("html, body").animate({scrollTop : 800}, "fast");
+      firstClick = false
+      scrolledValue = 800;
+      return;
+    }
+  }else{
+    // first-section is inflated
+    if($(".first-section").length > 0){
+      $("html, body").animate({scrollTop : scrolledValue}, "fast");
+      // first-section is not inflated
+    }else{
+      // empty the container, append about me HTML, reset counter
+      $(".container").empty()
+      $(".container").append(list[0]).hide().show("slow");
+      $("html, body").animate({scrollTop : scrolledValue}, "fast");
+      counter = 0;
+    }
+  }
 }
 
 function translateToContentMobile(input){
-  $("html, body").animate({scrollTop : 320}, "fast");
+  // if  this is first click, set firstClick flag to false
+  if(firstClick){
+    firstClick = false;
+  }
+
+  // scroll down to position
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 320}, "fast");
+    scrolledValue = 320;
+  }else{
+    $("html, body").animate({scrollTop : 800}, "fast");
+    scrolledValue = 800;
+  }
+
+  // inflate HTML
   if(input == "EXP"){
-    console.log("LOAD EXP")
+    $(".container").empty()
+    $(".container").append(list[1]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 1;
   }else if(input == "EDU"){
-    console.log("LOAD EDU")
+    $(".container").empty()
+    $(".container").append(list[2]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 2;
   }else if(input == "SKILLS"){
-    console.log("LOAD SKILLS")
+    $(".container").empty()
+    $(".container").append(list[3]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 3;
   }else if(input == "PRJ_DEMO"){
-    console.log("LOAD PRJ DEMO")
-  }else if(input == "CERTS"){
-    console.log("LOAD CERTS")
+    $(".container").empty()
+    $(".container").append(list[4]).hide().show("slow");
+    $("html, body").animate({scrollTop : scrolledValue}, "fast");
+    counter = 4;
   }
 }
 
@@ -117,7 +191,7 @@ function goNext(){
     }
   }
   // perform action
-  if(counter < 5 && !firstClick){
+  if(counter < 4 && !firstClick){
     counter++;
     $(".container").empty()
     
