@@ -27,6 +27,24 @@ var list = ["<section class='first-section'><div class='row-1'><div class=\"inne
    './skills',
     './prj_demo']
 
+
+function emptyAndAppend(index){
+  $(".container").empty()
+  $(".container").append(list[index]).hide().show("slow");
+  $("html, body").animate({scrollTop : scrolledValue}, "fast");
+  counter = index;
+}
+
+function setWidth(){
+  if(counter == 1){
+    $(".container").css("width", "90%");
+  }else if(counter == 2){
+    $(".container").css("width", "75%");
+  }else{
+    $(".container").css("width", "");
+  }
+}
+
 function translateToContent(input){
   // if  this is first click, set firstClick flag to false
   if(firstClick){
@@ -45,25 +63,21 @@ function translateToContent(input){
 
   // inflate HTML
   if(input == "EXP"){
-    $(".container").empty()
-    $(".container").append(list[1]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 1;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "EDU"){
-    $(".container").empty()
-    $(".container").append(list[2]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 2;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "SKILLS"){
-    $(".container").empty()
-    $(".container").append(list[3]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 3;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "PRJ_DEMO"){
-    $(".container").empty()
-    $(".container").append(list[4]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 4;
+    setWidth()
+    emptyAndAppend(counter)
   }
 }
 
@@ -88,10 +102,9 @@ function translateToHome(){
       // first-section is not inflated
     }else{
       // empty the container, append about me HTML, reset counter
-      $(".container").empty()
-      $(".container").append(list[0]).hide().show("slow");
-      $("html, body").animate({scrollTop : scrolledValue}, "fast");
       counter = 0;
+      setWidth()
+      emptyAndAppend(counter)
     }
   }
 }
@@ -114,25 +127,21 @@ function translateToContentMobile(input){
 
   // inflate HTML
   if(input == "EXP"){
-    $(".container").empty()
-    $(".container").append(list[1]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 1;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "EDU"){
-    $(".container").empty()
-    $(".container").append(list[2]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 2;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "SKILLS"){
-    $(".container").empty()
-    $(".container").append(list[3]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 3;
+    setWidth()
+    emptyAndAppend(counter)
   }else if(input == "PRJ_DEMO"){
-    $(".container").empty()
-    $(".container").append(list[4]).hide().show("slow");
-    $("html, body").animate({scrollTop : scrolledValue}, "fast");
     counter = 4;
+    setWidth()
+    emptyAndAppend(counter)
   }
 }
 
@@ -160,13 +169,7 @@ function goPrevious(){
     counter--;
     $(".container").empty()
 
-    if(counter == 1){
-      $(".container").css("width", "90%");
-    }else if(counter == 2){
-      $(".container").css("width", "75%");
-    }else{
-      $(".container").css("width", "");
-    }
+    setWidth()
 
     $(".container").append(list[counter]).hide().show('slow');
     $("html, body").animate({scrollTop : scrolledValue}, "fast");
@@ -194,14 +197,8 @@ function goNext(){
   if(counter < 4 && !firstClick){
     counter++;
     $(".container").empty()
-    
-    if(counter == 1){
-      $(".container").css("width", "90%");
-    }else if(counter == 2){
-      $(".container").css("width", "75%");
-    }else{
-      $(".container").css("width", "");
-    }
+
+    setWidth()
 
     $(".container").append(list[counter]).hide().show("slow");
     $("html, body").animate({scrollTop : scrolledValue}, "fast");
