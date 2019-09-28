@@ -114,7 +114,7 @@ function goNext(){
       return;
     }
   }
-
+  // perform action
   if(counter < 5 && !firstClick){
     counter++;
     $(".container").empty()
