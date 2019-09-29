@@ -25,6 +25,49 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* BIG SCREEN MODE */
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+.gif-container-one img{
+  margin: 16px;
+  height: 400px;
+  border-radius: 4px;
+  border-color: #303030;
+  animation: fadein 2s 1;
+}
+
+.gif-container-two img{
+  margin: 16px;
+  height: 400px;
+  border-radius: 4px;
+  border-color: #303030;
+  animation: fadein 2s 1;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.gif-container-one h1{
+  font-size: 15px;
+}
+
+.gif-container-two h1{
+  font-size: 15px;
+}
+
+.gif-container-one{
+  display: flex;
+  font-family: courier;
+}
+
+.gif-container-two{
+  display: flex;
+  float: right;
+  font-family: courier;
+}
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /* BIG SCREEN MODE */
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
@@ -324,14 +367,28 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /* BIG SCREEN MODE */
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
-.next-previous-container a {
+
+div.left  a {
   text-decoration: none;
   padding: 30px 50px;
-  margin: 40px;
   font-size: 35px;
 }
 
-.next-previous-container a:hover {
+div.right a{
+  text-decoration: none;
+  padding: 30px 50px;
+  font-size: 35px;
+}
+
+div.left a:hover {
+  background-color: #5797B6;
+  color: black;
+  border: 2px solid #C4C4C4;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+div.right a:hover{
   background-color: #5797B6;
   color: black;
   border: 2px solid #C4C4C4;
@@ -684,14 +741,16 @@ img {
     font-size: 16px;
   }
 
-  .next-previous-container a {
+  div.left  a {
     text-decoration: none;
     padding: 20px 40px;
-    margin: 40px;
-    font-size: 35px;
   }
 
-
+  div.right a{
+    text-decoration: none;
+    padding: 20px 40px;
+  }
+ 
   .timeline ol,
   .timeline ol li {
     width: auto;
@@ -767,7 +826,17 @@ img {
   }
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1400px) {
+  .gif-container-two{
+    float: left;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
+  #webImg{
+    width: 450px;
+  }
+
   #hero {
     display: none;
   }
@@ -806,11 +875,14 @@ img {
     font-size: 12px;
   }
 
-  .next-previous-container a {
+  div.left  a {
     text-decoration: none;
     padding: 20px 30px;
-    margin: 40px;
-    font-size: 20px;
+  }
+
+  div.right a{
+    text-decoration: none;
+    padding: 20px 30px;
   }
 
   .timeline ol,
