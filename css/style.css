@@ -85,9 +85,9 @@ body {
   height: 0.5rem;
   background-color: #303030;
   position: relative;
-  width: -webkit-calc(100% - 2rem);
-  width: -moz-calc(100% - 2rem);
-  width: calc(100% - 2rem);
+  width: -webkit-calc(100%);
+  width: -moz-calc(100%);
+  width: calc(100%);
   margin-right: 0.5rem;
 }
 
@@ -939,11 +939,35 @@ img {
     width: auto;
   }
 
+  .pro-skills h1{
+    font-size: 24px;
+  }
+
+  .pro-skills p{
+    font-size: 12px;
+  }
+
   .pers-skills{
     width: auto;
   }
 
+  .pers-skills h1{
+    font-size: 24px;
+  }
+
+  .pers-skills p{
+    font-size: 12px;
+  }
+
   .lang-skills{
     width: auto;
+  }
+
+  .lang-skills h1{
+    font-size: 24px;
+  }
+
+  .lang-skills p{
+    font-size: 12px;
   }
 }
