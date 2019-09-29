@@ -621,8 +621,8 @@ tr:nth-child(even) {
 /* MOBILE MODE */
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 .pinf-brief-mobile{
-  margin-top: 100px;
-  margin-left: 10%;
+  margin-top: 150px;
+  margin-left: 15%;
 }
 
 .pinf-brief-container-mobile{
@@ -637,7 +637,7 @@ tr:nth-child(even) {
 }
 
 .pinf-brief-container-mobile p{
-  font-size: 11px;
+  font-size: 13px;
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -665,7 +665,7 @@ tr:nth-child(even) {
   display: none;
   overflow: hidden;
   background: url("https://cdn.omgpx.com/images/2018/11/11/login.jpg") no-repeat center bottom/cover;
-  height: 320px;
+  height: 500px;
 }
 
 .first-section {

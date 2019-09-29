@@ -116,8 +116,8 @@ function translateToContent(input){
   // scroll down to position
   var mq = window.matchMedia( "(max-width: 768px)" );
   if (mq.matches) {
-    $("html, body").animate({scrollTop : 320}, "fast");
-    scrolledValue = 320;
+    $("html, body").animate({scrollTop : 520}, "fast");
+    scrolledValue = 520;
   }else{
     $("html, body").animate({scrollTop : 800}, "fast");
     scrolledValue = 800;
@@ -147,9 +147,9 @@ function translateToHome(){
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
-      $("html, body").animate({scrollTop : 320}, "fast");
+      $("html, body").animate({scrollTop : 520}, "fast");
       firstClick = false
-      scrolledValue = 320;
+      scrolledValue = 520;
       return;
     }else{
       $("html, body").animate({scrollTop : 800}, "fast");
@@ -180,8 +180,8 @@ function translateToContentMobile(input){
   // scroll down to position
   var mq = window.matchMedia( "(max-width: 768px)" );
   if (mq.matches) {
-    $("html, body").animate({scrollTop : 320}, "fast");
-    scrolledValue = 320;
+    $("html, body").animate({scrollTop : 520}, "fast");
+    scrolledValue = 520;
   }else{
     $("html, body").animate({scrollTop : 800}, "fast");
     scrolledValue = 800;
@@ -215,9 +215,9 @@ function goPrevious(){
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
-      $("html, body").animate({scrollTop : 320}, "fast");
+      $("html, body").animate({scrollTop : 520}, "fast");
       firstClick = false
-      scrolledValue = 320;
+      scrolledValue = 520;
       return;
     }else{
       $("html, body").animate({scrollTop : 800}, "fast");
@@ -244,9 +244,9 @@ function goNext(){
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
-      $("html, body").animate({scrollTop : 320}, "fast");
+      $("html, body").animate({scrollTop : 520}, "fast");
       firstClick = false
-      scrolledValue = 320;
+      scrolledValue = 520;
       return;
     }else{
       $("html, body").animate({scrollTop : 800}, "fast");
