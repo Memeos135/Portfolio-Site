@@ -383,15 +383,15 @@ div.right a{
 div.left a:hover {
   background-color: #5797B6;
   color: black;
-  border: 2px solid #C4C4C4;
   opacity: 0.7;
   text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.3);
 }
 
 div.right a:hover{
   background-color: #5797B6;
   color: black;
-  border: 2px solid #C4C4C4;
+  border: 1px solid rgba(0,0,0,0.3);
   opacity: 0.7;
   text-decoration: none;
 }
@@ -480,6 +480,8 @@ tr:nth-child(even) {
   background: rgba(0,0,0,0.3);
   padding: 10px 16px;
   color: white;
+  border-radius: 6px;
+  border: 1px solid #303030;
 }
 
 .contact-container textarea{
@@ -499,6 +501,8 @@ tr:nth-child(even) {
   font-family: courier;
   background: rgba(0,0,0,0.3);
   padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.3);
 }
 
 .buttons-container input:hover{
@@ -525,6 +529,8 @@ tr:nth-child(even) {
   background: rgba(0,0,0,0.3);
   padding: 4px 8px;
   font-size: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.3);
 }
 
 .buttons-container-mobile input:hover{
@@ -552,6 +558,7 @@ tr:nth-child(even) {
   font-size: 11px;
   opacity: 0.5;
   text-decoration: none;
+  background: black;
 }
 
 /* Change the color of links on hover */
@@ -808,7 +815,7 @@ img {
   }
 
   .skills-container{
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }

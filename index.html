@@ -42,14 +42,8 @@
       </div>
     </div>
     <div id='hero-mobile'>
-      <div class="topnav-mobile">
-        <a class="active" href="#home" onclick="translateToHome()">Home</a>
-        <a href="#exp" onclick="translateToContentMobile('EXP')">Experience</a>
-        <a href="#edu" onclick="translateToContentMobile('EDU')">Education</a>
-        <a href="#skills" onclick="translateToContentMobile('SKILLS')">Skills</a>
-        <a href="#prj_demo" onclick="translateToContentMobile('PRJ_DEMO')">Projects Demo</a>
-        <a href="https://www.github.com/memeos135">GitHub</a>
-        <a href="#contact" onclick="translateToEnd()">Contact</a>
+      <div class="topnav-mobile" style="width: 100%;">
+        <a class="active" href="#expand" style="width: 100%; text-align: left;"onclick="expandItems()">Expand ></a>
       </div>
       <div class="pinf-brief-mobile">
         <div class="pinf-brief-container-mobile">
@@ -177,25 +171,62 @@
         <p> +966547171060 </p>
       </div>
       <div>
-  			<form action="https://www.linkedin.com/in/mohammed-bokhari/" name="sentMessage" id="contactForm">
-  				<div class="control-group">
-  					<div class="col form-group">
-  						<label class="sr-only">Name</label>
-  				  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" maxlength="30" required>
-  					</div>
-  				    <div class="col form-group">
-  				    	<label class="sr-only">Email</label>
-  				    	<input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required>
-  				    </div>
-  				    <div class="col form-group">
-  				    	<label class="sr-only">Message</label>
-  				    	<textarea rows="6" name="message" class="form-control" placeholder="Message" id="message" required></textarea>
-  				    </div>
-            <div class="submit-container">
-              <input type="submit" value="Submit" />
+				<div class="control-group">
+					<div class="col form-group">
+						<label class="sr-only">Name</label>
+				  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" maxlength="30" required>
+					</div>
+				    <div class="col form-group">
+				    	<label class="sr-only">Email</label>
+				    	<input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required>
+				    </div>
+            <div class="col form-group">
+              <label class="sr-only">Subject</label>
+              <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject" required>
             </div>
-  				</div>
-  			</form>
+				    <div class="col form-group">
+				    	<label class="sr-only">Message</label>
+				    	<textarea rows="6" name="message" class="form-control" placeholder="Message" id="message" required></textarea>
+				    </div>
+          <div class="submit-container">
+            <input type="submit" value="Submit" onclick="myFunction()" />
+          </div>
+				</div>
+        <script>
+          function myFunction(){
+            if($("#name").val().length < 3){
+              alert("Please provide a valid name");
+              return;
+            }
+
+            if($("#email").val().length < 11 && !emailIsValid($("#email").val())){
+              alert("Please provide a valid email");
+              return;
+            }
+
+            if($("#subject").val().length < 6){
+              alert("Please provide a valid subject");
+              return;
+            }
+
+            if($("#message").val().length < 10){
+              alert("Please provide a valid message");
+              return;
+            }
+
+            window.open('mailto:mohammed.ik.bokhari@gmail.com?subject=' + $("#subject").val() +'&body=' + $("#message").val());
+
+            $("#name").val("")
+            $("#email").val("")
+            $("#subject").val("")
+            $("#message").val("")
+
+          }
+
+          function emailIsValid (email) {
+              return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+            }
+        </script>
       </div>
     </div>
   </body>

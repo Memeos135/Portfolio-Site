@@ -27,7 +27,24 @@ var list = ["<section class='first-section'><div class='row-1'><div class=\"inne
    "<div class=\"skills-container\"><h1 align=\"center\" style=\"font-family: courier;\"> Skills </h1><div class=\"skills-sub-container\" ><div class=\"pro-skills\" ><h1 align=\"center\"> Professional </h1><div class=\"pro-skills-list\"><p> Android Development Java </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 90%;\"></div></div><p> Android Development Kotlin </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> Front-End Development </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> jQuery </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 75%;\"></div></div><p> Python </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> Firebase </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> Git </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 85%;\"></div></div><p> AWS Lightsail - Servers </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 85%;\"></div></div><p> Room/Room Database </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 70%;\"></div></div><p> SQL </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 70%;\"></div></div></div></div><div class=\"pers-skills\" ><h1 align=\"center\"> Soft </h1><div class=\"pers-skills-list\"><p> Communication </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 85%;\"></div></div><p> Teamwork </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> Adaptability </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div><p> Problem-Solving </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 75%;\"></div></div><p> Creativity </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 65%;\"></div></div><p> Time Management </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 90%;\"></div></div><p> Leadership </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 80%;\"></div></div></div></div><div class=\"lang-skills\" ><h1 align=\"center\"> Language </h1><div class=\"lang-skills-list\"><p> English </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 95%;\"></div></div><p> Arabic </p><div class=\"miniBar\"><div class=\"miniBarProgress\" style=\"width: 95%;\"></div></div></div></div></div> </div>",
     "<div style=\"overflow-x: auto; margin-left: 5%; margin-right: 5%;\"><div class=\"gif-container-one\"><div class=\"img-container\"><h1 align=\"center\">BooKT Android </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=4MQD4m-SGPA&t=10s')\" onmouseleave=\"normalImg('BooKTAndroid', this)\" onmouseover=\"changeImage('BooKTAndroid', this)\"src=\"BooKTImg.jpg\" alt=\"Loading\" title=\"BooKT Android\" /></div><div class=\"img-container\"><h1 align=\"center\">BooKT Web </h1><img id=\"webImg\" onclick=\"window.open('https://www.youtube.com/watch?v=AFqHu8rX7KQ&t=8s')\" onmouseleave=\"normalImg('BooKTWeb', this)\" onmouseover=\"changeImage('BooKTWeb', this)\" src=\"BooKTWebImg.PNG\" alt=\"Loading\" title=\"BooKT Web\" /></div><div class=\"img-container\"><h1 align=\"center\">Motabei Workshop </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=yscG18_7ZLo&feature=youtu.be')\" onmouseleave=\"normalImg('MotabeiWorkshop', this)\" onmouseover=\"changeImage('MotabeiWorkshop', this)\" src=\"MotabeiWorkshopImg.jpg\" alt=\"Loading\" title=\"Motabei Workshop\" /></div></div></div><div style=\"margin-right: 5%; margin-left: 5%; overflow-x: auto;\"><div class=\"gif-container-two\"><div class=\"img-container\"><h1 align=\"center\">Motabei Driver </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=S4sKbiymfjM')\" onmouseleave=\"normalImg('MotabeiDriver', this)\" onmouseover=\"changeImage('MotabeiDriver', this)\" src=\"MotabeiDriverImg.jpg\" alt=\"Loading\" title=\"Motabei Driver\" /></div><div class=\"img-container\"><h1 align=\"center\">MacroCounter Android </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=boqXk1kEsc0')\" onmouseleave=\"normalImg('MacroCounter', this)\" onmouseover=\"changeImage('MacroCounter', this)\" src=\"MacroCounterImg.jpg\" alt=\"Loading\" title=\"MacroCounter Android\" /></div><div class=\"img-container\"><h1 align=\"center\">GYH Supervisor </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=Qc-mubMzqqU')\" onmouseleave=\"normalImg('GYHSupervisor', this)\" onmouseover=\"changeImage('GYHSupervisor', this)\" src=\"GyhSupervisorImg.jpg\" alt=\"Loading\" title=\"GYH Supervisor Android\" /></div><div class=\"img-container\"><h1 align=\"center\">GYH Operator </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=CTWY362Xirs')\" onmouseleave=\"normalImg('GYHOperator', this)\" onmouseover=\"changeImage('GYHOperator', this)\" src=\"GyhOperatorImg.jpg\" alt=\"Loading\" title=\"GYH Operator Android\" /></div><div class=\"img-container\"><h1 align=\"center\">GYH Driver </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=etR6jkuaEug')\" onmouseleave=\"normalImg('GYHDriver', this)\" onmouseover=\"changeImage('GYHDriver', this)\" src=\"GyhDriverImg.jpg\" alt=\"Loading\" title=\"GYH Driver Android\" /></div><div class=\"img-container\"><h1 align=\"center\">GYH Mutamer </h1><img onclick=\"window.open('https://www.youtube.com/watch?v=A6pGXIzWQ50')\" onmouseleave=\"normalImg('GYHMutamer', this)\" onmouseover=\"changeImage('GYHMutamer', this)\" src=\"GyhMutamerImg.jpg\" alt=\"Loading\" title=\"GYH Mutamer Android\" /></div></div></div>"]
 
+var topnavMobile = "<a class=\"active\" href=\"#expand\" style=\"width: 100%; text-align: left;\" onclick=\"collapseItems()\">Collapse <</a><br><br><a href=\"#home\" onclick=\"translateToHome()\">Home</a><a href=\"#exp\" onclick=\"translateToContentMobile('EXP')\">Experience</a><a href=\"#edu\" onclick=\"translateToContentMobile('EDU')\">Education</a><a href=\"#skills\" onclick=\"translateToContentMobile('SKILLS')\">Skills</a><a href=\"#prj_demo\" onclick=\"translateToContentMobile('PRJ_DEMO')\">Projects Demo</a><a href=\"https://www.github.com/memeos135\">GitHub</a><a href=\"#contact\" onclick=\"translateToEnd()\">Contact</a>"
+var isExpanded = false;
+
+function expandItems(){
+  isExpanded = true;
+  $(".topnav-mobile").empty();
+  $(".topnav-mobile").append(topnavMobile)
+}
+
+function collapseItems(){
+  isExpanded = false;
+  $(".topnav-mobile").empty();
+  $(".topnav-mobile").append("<a class=\"active\" href=\"#expand\" style=\"width: 100%; text-align: left;\" onclick=\"expandItems()\">Expand >")
+}
+
 function normalImg(imageName, source){
+  $(".loading-div").remove()
+
   if(imageName == 'BooKTAndroid'){
     $(source).attr('src', 'BooKTImg.jpg');
     $(source).css('border-color', '#303030');
@@ -57,7 +74,12 @@ function normalImg(imageName, source){
     $(source).css('border-color', '#303030');
   }
 }
+
 function changeImage(imageName, source){
+  if($(".loading-div").length < 1){
+    $("<div class=\"loading-div\" style=\"position: absolute; width: 100%; margin-left:auto; margin-right: auto;\"><img style=\"border: 1px solid white; width: 35px; height: 35px; margin-left: 35px; display: block; margin-right: auto; margin-left:auto;\" src=\"loading-gif.gif\"/></div>").insertBefore($(source).parent('div').parent('div'));
+  }
+
   if(imageName == 'BooKTAndroid'){
     $(source).attr('src', 'BooKTGif.gif');
     $(source).css('border-color', '#19A4D0');
@@ -108,6 +130,10 @@ function setWidth(){
 }
 
 function translateToContent(input){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
   // if  this is first click, set firstClick flag to false
   if(firstClick){
     firstClick = false;
@@ -144,6 +170,11 @@ function translateToContent(input){
 }
 
 function translateToHome(){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
+
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
@@ -172,6 +203,11 @@ function translateToHome(){
 }
 
 function translateToContentMobile(input){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
+
   // if  this is first click, set firstClick flag to false
   if(firstClick){
     firstClick = false;
@@ -208,10 +244,20 @@ function translateToContentMobile(input){
 }
 
 function translateToEnd(){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
+
   $("html, body").animate({scrollTop : document.body.scrollHeight}, "fast");
 }
 
 function goPrevious(){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
+  
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
@@ -241,6 +287,11 @@ function goPrevious(){
 }
 
 function goNext(){
+  // if topnav-mobile is expanded
+  if(isExpanded){
+    collapseItems()
+  }
+
   if(firstClick){
     var mq = window.matchMedia( "(max-width: 768px)" );
     if (mq.matches) {
