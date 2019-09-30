@@ -1,2 +1,2 @@
 # Portfolio-Site-Demo
-Go to [mohammedikbokhari.com](mohammedikbokhari.com) for live.
+Go to [mohammedikbokhari.com](http://mohammedikbokhari.com) for live.
