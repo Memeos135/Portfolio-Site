@@ -77,7 +77,7 @@ function normalImg(imageName, source){
 
 function changeImage(imageName, source){
   if($(".loading-div").length < 1){
-    $("<div class=\"loading-div\" style=\"position: absolute; width: 100%; margin-left:auto; margin-right: auto;\"><img style=\"border: 1px solid white; width: 35px; height: 35px; margin-left: 35px; display: block; margin-right: auto; margin-left:auto;\" src=\"loading-gif.gif\"/></div>").insertBefore($(source).parent('div').parent('div'));
+    $("<div class=\"loading-div\" style=\"position: absolute; width: 89%; margin-left: auto; margin-right: auto;\"><img style=\"border: 1px solid white; width: 35px; height: 35px; display: block; margin-right: auto; margin-left:auto;\" src=\"loading-gif.gif\"/></div>").insertBefore($(source).parent('div').parent('div'));
   }
 
   if(imageName == 'BooKTAndroid'){
