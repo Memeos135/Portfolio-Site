@@ -1,2 +1,2 @@
 # Portfolio-Site-Demo
-Go to <a href="mohammedikbokhari.com">mohammedikbokhari.com</a> for live.
+Go to [mohammedikbokhari.com](mohammedikbokhari.com) for live.
