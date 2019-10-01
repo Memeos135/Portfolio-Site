@@ -139,16 +139,6 @@ function translateToContent(input){
     firstClick = false;
   }
 
-  // scroll down to position
-  var mq = window.matchMedia( "(max-width: 768px)" );
-  if (mq.matches) {
-    $("html, body").animate({scrollTop : 520}, "fast");
-    scrolledValue = 520;
-  }else{
-    $("html, body").animate({scrollTop : 800}, "fast");
-    scrolledValue = 800;
-  }
-
   // inflate HTML
   if(input == "EXP"){
     counter = 1;
@@ -166,6 +156,16 @@ function translateToContent(input){
     counter = 4;
     setWidth()
     emptyAndAppend(counter)
+  }
+
+  // scroll down to position
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 520}, "fast");
+    scrolledValue = 520;
+  }else{
+    $("html, body").animate({scrollTop : 800}, "fast");
+    scrolledValue = 800;
   }
 }
 
@@ -213,16 +213,6 @@ function translateToContentMobile(input){
     firstClick = false;
   }
 
-  // scroll down to position
-  var mq = window.matchMedia( "(max-width: 768px)" );
-  if (mq.matches) {
-    $("html, body").animate({scrollTop : 520}, "fast");
-    scrolledValue = 520;
-  }else{
-    $("html, body").animate({scrollTop : 800}, "fast");
-    scrolledValue = 800;
-  }
-
   // inflate HTML
   if(input == "EXP"){
     counter = 1;
@@ -240,6 +230,16 @@ function translateToContentMobile(input){
     counter = 4;
     setWidth()
     emptyAndAppend(counter)
+  }
+  
+  // scroll down to position
+  var mq = window.matchMedia( "(max-width: 768px)" );
+  if (mq.matches) {
+    $("html, body").animate({scrollTop : 520}, "fast");
+    scrolledValue = 520;
+  }else{
+    $("html, body").animate({scrollTop : 800}, "fast");
+    scrolledValue = 800;
   }
 }
 

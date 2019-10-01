@@ -214,12 +214,24 @@
               return;
             }
 
-            window.open('mailto:mohammed.ik.bokhari@gmail.com?subject=' + $("#subject").val() +'&body=' + $("#message").val());
-
-            $("#name").val("")
-            $("#email").val("")
-            $("#subject").val("")
-            $("#message").val("")
+            var arr = { Name: $("#name").val(), Email: $("#email").val(), Subject: $("#subject").val(), Body: $("#message").val() };
+            $.ajax({
+                url: 'http://mohammedikbokhari.com/processEmail',
+                crossDomain: true,
+                type: 'POST',
+                data: JSON.stringify(arr),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                headers: {  'Access-Control-Allow-Origin': '*' },
+                async: true,
+                success: function(msg) {
+                  $("#name").val("")
+                  $("#email").val("")
+                  $("#subject").val("")
+                  $("#message").val("")
+                  alert(msg["message"])
+                }
+            });
 
           }
 
