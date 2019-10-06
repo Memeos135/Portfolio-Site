@@ -282,7 +282,7 @@ textarea{
 .timeline {
   white-space: nowrap;
   overflow-x: auto;
-  margin: auto;
+  width: 100%;
 }
 
 .timeline ol {
@@ -732,7 +732,49 @@ img {
   background-size: cover;
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 4000px) {
+  .timeline {
+    margin: auto;
+    width: 50%;
+  }
 
+  .edu-container{
+    margin: auto;
+    width: 70%;
+  }
+
+  .gif-container-one{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .gif-container-two{
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 3500px) {
+  .timeline {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  .timeline {
+    margin: none;
+    width: 100%;
+  }
+
+  .gif-container-one{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gif-container-two{
+    margin-right: 0;
+  }
+}
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /* This is where the hero image intersects with the brief info text - remove the image and shrink the text size so that the nav items don't line up under each other*/
 @media only screen and (max-width: 1090px) {
@@ -837,7 +879,7 @@ img {
   }
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
   .gif-container-two{
     float: left;
   }
