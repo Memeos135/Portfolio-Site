@@ -216,7 +216,7 @@
 
             var arr = { Name: $("#name").val(), Email: $("#email").val(), Subject: $("#subject").val(), Body: $("#message").val() };
             $.ajax({
-                url: 'http://mohammedikbokhari.com/processEmail',
+                url: 'http://mohammedikbokhari.com/API/processEmail',
                 crossDomain: true,
                 type: 'POST',
                 data: JSON.stringify(arr),
